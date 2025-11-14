@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.15" height="32.15" viewBox="0 0 32.15 32.15">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="Grupo_2992" transform="translate(-327.931 -361.644)">
+        <path id="Trazado_4687" d="M353.241 378.625l-13.084 13.084a2.9 2.9 0 0 1-4.1 0l-6.279-6.279a2.9 2.9 0 0 1 0-4.1l17.838-17.838a2.9 2.9 0 0 1 4.1 0l6.284 6.28a2.9 2.9 0 0 1 0 4.1z" class="cls-1" transform="translate(0)"/>
+        <path id="Línea_485" d="M0 0L10.378 10.378" class="cls-1" transform="translate(339.017 372.093)"/>
+        <path id="Línea_486" d="M0 0L21.104 0" class="cls-1" transform="translate(338.102 392.557)"/>
+    </g>
+</svg>

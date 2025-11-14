@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69">
+    <defs>
+        <style>
+            .cls-2{fill:none;stroke-linejoin:round;stroke:#fff}
+        </style>
+    </defs>
+    <g id="Icon_feather-arrow-down-circle" transform="translate(4.242 3)">
+        <path id="Trazado_5114" fill="none" stroke="#978510" stroke-linecap="round" stroke-linejoin="round" d="M71 37A34 34 0 1 1 37 3a34 34 0 0 1 34 34z" transform="translate(-6.742 -5.5)"/>
+        <g id="Grupo_3014" transform="translate(24.16 25.513)">
+            <path id="Trazado_5116" d="M18 21.53v11.65" class="cls-2" transform="translate(-12.176 -21.53)"/>
+            <path id="Trazado_5123" d="M0 0v11.65" class="cls-2" transform="translate(11.65 5.825) rotate(90)"/>
+        </g>
+    </g>
+</svg>
