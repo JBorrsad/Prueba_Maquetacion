@@ -24,7 +24,7 @@
 		$(window).on('scroll', function() {
 			const scrollPos = $(window).scrollTop() + 200;
 			
-			$('.main-header__menu a, .main-footer__menu a').each(function() {
+			$('.main-header__menu-link, .main-footer__menu a').each(function() {
 				const link = $(this);
 				const href = link.attr('href');
 				
@@ -35,7 +35,7 @@
 						const sectionBottom = sectionTop + section.outerHeight();
 						
 						if(scrollPos >= sectionTop && scrollPos < sectionBottom) {
-							$('.main-header__menu a, .main-footer__menu a').removeClass('active');
+							$('.main-header__menu-link, .main-footer__menu a').removeClass('active');
 							link.addClass('active');
 						}
 					}
@@ -184,13 +184,13 @@
 	 * Sistema de favoritos
 	 */
 	function initFavorites() {
-		$('.property-card__favorite, .property-month__favorite').on('click', function(e) {
+		$('.property-card__favorite, .month-property__favorite').on('click', function(e) {
 			e.preventDefault();
 			e.stopPropagation();
 			
 			const btn = $(this);
-			const card = btn.closest('.property-card, .property-month__card');
-			const ref = card.find('.property-card__badge, .property-month__badge').text();
+			const card = btn.closest('.property-card, .month-property__featured');
+			const ref = card.find('.property-card__badge, .month-property__badge').text();
 			
 			btn.toggleClass('active');
 			const isActive = btn.hasClass('active');
@@ -198,15 +198,14 @@
 			btn.attr('aria-pressed', isActive);
 			btn.attr('aria-label', isActive ? 'Quitar de favoritos' : 'Añadir a favoritos');
 			
-			saveFavorite(ref, isActive);
-			
+			// Cambiar icono
 			if(isActive) {
-				btn.css('transform', 'scale(1.2)');
-				setTimeout(function() {
-					btn.css('transform', '');
-				}, 200);
+				btn.html('<i class="fas fa-heart"></i>');
+			} else {
+				btn.html('<i class="far fa-heart"></i>');
 			}
 			
+			saveFavorite(ref, isActive);
 			updateFavoritesCount();
 		});
 	}
@@ -234,13 +233,14 @@
 	function loadFavoritesFromStorage() {
 		const favorites = JSON.parse(localStorage.getItem('inmovalley_favorites') || '[]');
 		
-		$('.property-card, .property-month__card').each(function() {
+		$('.property-card, .month-property__featured').each(function() {
 			const card = $(this);
-			const ref = card.find('.property-card__badge, .property-month__badge').text();
-			const btn = card.find('.property-card__favorite, .property-month__favorite');
+			const ref = card.find('.property-card__badge, .month-property__badge').text();
+			const btn = card.find('.property-card__favorite, .month-property__favorite');
 			
 			if(favorites.includes(ref)) {
 				btn.addClass('active');
+				btn.html('<i class="fas fa-heart"></i>');
 				btn.attr('aria-pressed', 'true');
 				btn.attr('aria-label', 'Quitar de favoritos');
 			}
