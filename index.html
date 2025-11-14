@@ -42,83 +42,114 @@
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-     <!-- Main Header -->
-     <header class="main-header">
-       <div class="container">
-         <div class="row align-items-center">
-           
-           <!-- Mobile menu button -->
-           <div class="col-4 d-lg-none">
-             <button class="main-header__mobile-menu" id="openMenu" aria-label="Abrir menú">
-               <img src="Assets/menu.svg" alt="">
-             </button>
-           </div>
+    <!-- Main Header -->
+    <header class="main-header">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Mobile menu button -->
+          <div class="col-4 d-lg-none">
+            <button
+              class="main-header__mobile-menu"
+              id="openMenu"
+              aria-label="Abrir menú"
+            >
+              <img src="Assets/menu.svg" alt="" />
+            </button>
+          </div>
 
-           <!-- Logo (centro siempre) -->
-           <div class="col-4 col-lg-4 text-center order-lg-3">
-             <a href="#inicio" class="main-header__brand">
-               <img src="Assets/logo_header.svg" alt="Inmovalley">
-             </a>
-           </div>
+          <!-- Logo (centro siempre) -->
+          <div class="col-4 col-lg-4 text-center order-lg-3">
+            <a href="#inicio" class="main-header__brand">
+              <img src="Assets/logo_header.svg" alt="Inmovalley" />
+            </a>
+          </div>
 
-           <!-- Mobile search button -->
-           <div class="col-4 d-lg-none text-end">
-             <button class="main-header__mobile-search" aria-label="Buscar">
-               <img src="Assets/search.svg" alt="">
-             </button>
-           </div>
+          <!-- Mobile search button -->
+          <div class="col-4 d-lg-none text-end">
+            <button class="main-header__mobile-search" aria-label="Buscar">
+              <img src="Assets/search.svg" alt="" />
+            </button>
+          </div>
 
-           <!-- Menú principal (izquierda en desktop) -->
-           <div class="col-lg-4 order-lg-2 d-none d-lg-block">
-             <nav class="main-header__main-nav">
-               <div class="main-header__phone">
-                 <a href="tel:966274206">966 274 206</a>
-               </div>
-               <ul class="main-header__menu-list">
-                 <li><a href="#inicio" class="main-header__menu-link active">INICIO</a></li>
-                 <li><a href="#empresa" class="main-header__menu-link">Empresa</a></li>
-                 <li><a href="#propiedades" class="main-header__menu-link">Propiedades</a></li>
-                 <li><a href="#servicios" class="main-header__menu-link">Servicios</a></li>
-                 <li><a href="#vender" class="main-header__menu-link">Vender</a></li>
-                 <li><a href="#blog" class="main-header__menu-link">Blog</a></li>
-                 <li><a href="#contactar" class="main-header__menu-link">Contactar</a></li>
-               </ul>
-             </nav>
-           </div>
+          <!-- Menú principal (izquierda en desktop) -->
+          <div class="col-lg-4 order-lg-2 d-none d-lg-block">
+            <nav class="main-header__main-nav">
+              <div class="main-header__phone">
+                <a href="tel:966274206">966 274 206</a>
+              </div>
+              <ul class="main-header__menu-list">
+                <li>
+                  <a href="#inicio" class="main-header__menu-link active"
+                    >INICIO</a
+                  >
+                </li>
+                <li>
+                  <a href="#empresa" class="main-header__menu-link">Empresa</a>
+                </li>
+                <li>
+                  <a href="#propiedades" class="main-header__menu-link"
+                    >Propiedades</a
+                  >
+                </li>
+                <li>
+                  <a href="#servicios" class="main-header__menu-link"
+                    >Servicios</a
+                  >
+                </li>
+                <li>
+                  <a href="#vender" class="main-header__menu-link">Vender</a>
+                </li>
+                <li><a href="#blog" class="main-header__menu-link">Blog</a></li>
+                <li>
+                  <a href="#contactar" class="main-header__menu-link"
+                    >Contactar</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
 
-           <!-- Menú secundario (derecha en desktop) -->
-           <div class="col-lg-4 order-lg-last d-none d-lg-block text-end">
-             <div class="main-header__top-row">
-               <a href="mailto:info@inmovalley.com" class="main-header__email">info@inmovalley.com</a>
-               <div class="main-header__lang-selector">
-                 <img src="Assets/eng_flag.svg" alt="">
-                 <i class="fas fa-caret-down"></i>
-               </div>
-               <a href="https://www.facebook.com" target="_blank" class="main-header__facebook">
-                 <i class="fab fa-facebook-f"></i>
-               </a>
-             </div>
-             <div class="main-header__bottom-row">
-               <ul class="main-header__secondary-list">
-                 <li><a href="#valorar">Valora tu propiedad</a></li>
-                 <li><a href="#contactar">Contactar</a></li>
-                 <li>
-                   <a href="#favoritos">
-                     <img src="Assets/Icon feather-heart-outline.svg" alt="Favoritos">
-                     <span id="fav-count"></span>
-                   </a>
-                 </li>
-               </ul>
-               <button class="main-header__menu-button" id="menuToggle">
-                 <img src="Assets/menu.svg" alt="">
-                 Menú
-               </button>
-             </div>
-           </div>
-
-         </div>
-       </div>
-     </header>
+          <!-- Menú secundario (derecha en desktop) -->
+          <div class="col-lg-4 order-lg-last d-none d-lg-block text-end">
+            <div class="main-header__top-row">
+              <a href="mailto:info@inmovalley.com" class="main-header__email"
+                >info@inmovalley.com</a
+              >
+              <div class="main-header__lang-selector">
+                <img src="Assets/eng_flag.svg" alt="" />
+                <i class="fas fa-caret-down"></i>
+              </div>
+              <a
+                href="https://www.facebook.com"
+                target="_blank"
+                class="main-header__facebook"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+            <div class="main-header__bottom-row">
+              <ul class="main-header__secondary-list">
+                <li><a href="#valorar">Valora tu propiedad</a></li>
+                <li><a href="#contactar">Contactar</a></li>
+                <li>
+                  <a href="#favoritos">
+                    <img
+                      src="Assets/Icon feather-heart-outline.svg"
+                      alt="Favoritos"
+                    />
+                    <span id="fav-count"></span>
+                  </a>
+                </li>
+              </ul>
+              <button class="main-header__menu-button" id="menuToggle">
+                <img src="Assets/menu.svg" alt="" />
+                Menú
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
     <!-- Menú Lateral Overlay -->
     <div class="side-menu" id="sideMenu">
@@ -348,72 +379,65 @@
         </div>
       </section>
 
-      <!-- Propiedad del Mes -->
-      <section class="property-month" id="propiedad-mes">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h2 class="section-title section-title--center">
-                <span>PROPIEDAD</span>
-                <strong><em>del</em></strong>
-                <strong><em>mes</em></strong>
-              </h2>
-
-              <a href="#" class="property-month__card">
-                <button
-                  class="property-month__favorite"
-                  aria-label="Añadir a favoritos"
-                >
-                  <img src="Assets/Icon feather-heart-outline.svg" alt="" />
-                </button>
-
-                <div class="property-month__image-container">
-                  <img
-                    src="Assets/property_month.jpg"
-                    alt="Propiedad del mes"
-                    class="property-month__image"
-                  />
-                </div>
-
-                <div class="property-month__info">
-                  <div class="property-month__badge">
-                    <strong>REF: 2350</strong>
-                  </div>
-                  <div class="property-month__details">
-                    <h3 class="property-month__type">
-                      Piso <span>Venta</span>
-                    </h3>
-                    <h4 class="property-month__location">
-                      Elche <small>·</small> Centro
-                    </h4>
-                  </div>
-                  <div class="property-month__features">
-                    <ul>
-                      <li>
-                        <span><strong>125</strong> m²</span>
-                      </li>
-                      <li>
-                        <small>·</small>
-                        <span><strong>3</strong> Habitaciones</span>
-                      </li>
-                      <li>
-                        <small>·</small> <span><strong>2</strong> Baños</span>
-                      </li>
-                      <li>
-                        <small>·</small> <span><strong>Piscina</strong></span>
-                      </li>
-                      <li>
-                        <small>·</small> <span><strong>Garaje</strong></span>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="property-month__price">185.000 €</div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+       <!-- Propiedad del Mes -->
+       <section class="month-property" id="propiedad-mes">
+         <div class="container">
+           <div class="row">
+             <div class="col-12">
+               <h2 class="section-title section-title--center section-title--light">
+                 <span>Propiedad</span>
+                 <strong><em>del</em></strong>
+                 <strong><em>mes</em></strong>
+               </h2>
+               
+               <div class="row">
+                 <div class="col-12">
+                   <a href="#" class="month-property__featured">
+                     <div class="row align-items-center">
+                       <div class="col-lg-6">
+                         <div class="month-property__image">
+                           <img src="Assets/property_month.jpg" alt="Propiedad del mes">
+                         </div>
+                       </div>
+                       <div class="col-lg-6">
+                         <div class="month-property__data">
+                           <button class="month-property__favorite" aria-label="Añadir a favoritos">
+                             <i class="far fa-heart"></i>
+                           </button>
+                           
+                           <div class="month-property__badge">
+                             <strong>REF: P-1182</strong>
+                           </div>
+                           
+                           <div class="month-property__info">
+                             <h3 class="month-property__type">Piso <span>Venta</span></h3>
+                             <h4 class="month-property__location">Elche <small>·</small> Porcelanosa</h4>
+                           </div>
+                           
+                           <div class="month-property__features">
+                             <ul>
+                               <li><span><strong>120</strong> m<sup>2</sup></span></li>
+                               <li><small>·</small> <span><strong>3</strong> Habitaciones</span></li>
+                               <li><small>·</small> <span><strong>2</strong> Baños</span></li>
+                               <li><small>·</small> <span><strong>Piscina</strong></span></li>
+                               <li><small>·</small> <span><strong>Garaje</strong></span></li>
+                             </ul>
+                           </div>
+                           
+                           <div class="month-property__price">
+                             285.000 €
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                   </a>
+                 </div>
+               </div>
+               
+             </div>
+           </div>
+         </div>
+       </section>
 
       <!-- Sell CTA -->
       <section class="sell-section" id="vender">
